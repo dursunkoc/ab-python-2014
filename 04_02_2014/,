@@ -1,0 +1,18 @@
+from PyQt4 import QtGui
+import sys
+
+class Pencere(QtGui.QWidget):
+    def __init__(self):
+        super(Pencere, self).__init__()
+
+        self.resize(250, 250)
+        self.move(300, 300)
+        self.setWindowTitle('Pencere')
+        self.show()
+
+
+if __name__ == "__main__":
+    app = QtGui.QApplication(sys.argv)
+    pencere = Pencere()
+    sys.exit(app.exec_())
+
